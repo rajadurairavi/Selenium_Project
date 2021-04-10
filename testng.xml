@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="2" verbose="2">
+
+<!-- <listeners>
+<listener class-name="testNG.TC01_TestNGBasic"></listener>
+</listeners>-->
+
+ <parameter name="TestData" value="I love Tiruvannamalai" />
+<parameter name="Author" value="Rajadurai" />
+<parameter name="MyName" value="Rajadurai"></parameter> 
+
+
+ <test name="Test">
+ 
+  <!--  <groups>
+  <run>
+  <include name="Apple"></include>
+  <include name="Lenovo"></include>
+  <exclude name="Moto"></exclude>
+  <include name="Vivo"></include>
+  </run>
+  </groups> -->
+  
+  
+    <classes>
+      
+     <class name="selenium_project.GooglePage"/>
+       
+     <!-- 
+     
+      
+      <class name="selenium_project.TwitterPage"/>
+      <class name="selenium_project.IrctcPage"/>
+      <class name="selenium_project.FaceBookPage"/>
+      <class name="selenium_project.RedBusPage"/>
+      <class name="selenium_project.GmailPage"/>
+      <class name="selenium_project.GooglePage"/>
+      <class name="selenium_project.WaitPractise"/>
+      
+     <class name="testNG.TC01_TestNGBasic"/>
+     <class name="testNG.TC02_CarDriving_Priority"/>
+     <class name="testNG.TC03_CarDriving_SkipTestCase"/>
+     <class name="testNG.TC04_SchoolGrade_Dependencies"/>
+      <class name="testNG.TC06_GroupingExamples"/>
+      <class name="testNG.TC07_ParameterizationExamples"/>
+      <class name="testNG.TC08_ParallelExecutionExamples"/>
+       -->
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

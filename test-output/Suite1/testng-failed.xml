@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browser" value="ie"/>
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="selenium_project.CrossBrowserTesting">
+        <methods>
+          <include name="closeTest"/>
+          <include name="closeTest"/>
+          <include name="SetBrowser"/>
+          <include name="SetBrowser"/>
+          <include name="launchGooglePage"/>
+        </methods>
+      </class> <!-- selenium_project.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

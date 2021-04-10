@@ -1,0 +1,24 @@
+
+//*[@AttributeName = 'Value']
+Examples : //*[@id='email']
+
+//tagName[@AttributeName='Value']
+Examples : //input[@id='email']
+
+//tagName[@id='value'][@name='value'][@class='value']
+Examples : //input[@id='email'][@id='email']
+
+//tagName[text()='exact text']
+Examples : //a[text()='Create New Account']
+
+//tagName[contains(text(),'value')]
+Examples : //a[contains(text(),'New Account')]
+
+//tagName[contains(@AttributeName,'value')]
+Examples : //button[contains(@id,'u_0_h')]
+
+//tagName[starts-with(text(),'text starting word')]
+Examples : //a[starts-with(text(),'Create New')]
+
+//tagName[starts-with(@AttributeName,'value')]
+Examples : //input[starts-with(@id,'email')]

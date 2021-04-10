@@ -1,0 +1,37 @@
+
+//tagName[@AttributeName='value']/parent::*
+//tagName[@AttributeName='value']/parent::parenttagName
+Example : //input[@id='txtPassword']/parent::*
+Example : //input[@id='txtPassword']/parent::div
+
+//tagName[@AttributeName='value']/child::*
+//tagName[@AttributeName='value']/child::childtagName
+Example : //input[@id='txtPassword']/child::*
+Example : //input[@id='txtPassword']/child::div
+Example : //div[@id='passContainer']/..//input[@id='pass']
+Example : //div[@id='passContainer']//input[@id='pass']
+
+//tagName[@AttributeName='value']/ancestor::*
+//tagName[@AttributeName='value']/ancestor::requiredtagName
+Example : //div[@id='passContainer']/ancestor::* (Starting Node - All above)
+Example : //div[@id='passContainer']/ancestor::form
+
+//tagName[@AttributeName='value']/following::*
+//tagName[@AttributeName='value']/following::requiredtagName
+Example : //div[@id='passContainer']/following::* (All below - Current node)
+Example : //div[@id='passContainer']/following::input[@name='login_source']
+
+//tagName[@AttributeName='value']/preceding::*
+//tagName[@AttributeName='value']/preceding::requiredtagName
+Example : //div[@id='passContainer']/preceding::* (Starting Node - All above)
+Example : //div[@id='passContainer']/preceding::input
+
+//tagName[@AttributeName='value']/following-sibling::*
+//tagName[@AttributeName='value']/following-sibling::requiredtagName
+Example : //input[@name='jazoest']/following-sibling::*
+Example : //input[@name='jazoest']/following-sibling::input
+
+//tagName[@AttributeName='value']/preceding-sibling::*
+//tagName[@AttributeName='value']/preceding-sibling::requiredtagName
+Example : //input[@name='lsd']/preceding-sibling::*
+Example : //input[@name='lsd']/preceding-sibling::input
